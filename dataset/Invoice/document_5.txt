@@ -1,0 +1,1 @@
+Invoice Number: INV1005 Customer: Digital India Subtotal: 18000 GST: 3240 Total Amount: 21240

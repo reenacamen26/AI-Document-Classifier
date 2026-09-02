@@ -1,0 +1,5 @@
+Invoice Number: INV2001
+Customer: XYZ Technologies
+Subtotal: 20000
+GST: 3600
+Total Amount: 23600

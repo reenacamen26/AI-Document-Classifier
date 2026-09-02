@@ -1,0 +1,1 @@
+Bank statement containing payment transactions and account balance information.

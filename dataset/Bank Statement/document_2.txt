@@ -1,0 +1,1 @@
+Bank Statement Account Number: 123457 Transaction Date: 25 August 2026 Debit: 5000 Balance: 45000

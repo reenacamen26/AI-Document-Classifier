@@ -1,0 +1,1 @@
+Invoice Number: INV1009 Customer: Cloud Systems Subtotal: 27000 GST: 4860 Total Amount: 31860

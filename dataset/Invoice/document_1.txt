@@ -1,0 +1,1 @@
+Invoice Number: INV1001 Customer: ABC Technologies Subtotal: 15000 GST: 2700 Total Amount: 17700

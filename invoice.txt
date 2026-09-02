@@ -1,0 +1,13 @@
+INVOICE
+
+Invoice Number: INV1025
+
+Customer: ABC Technologies
+
+Date: 27 August 2026
+
+Subtotal: 22000
+GST: 3960
+Total Amount: 25960
+
+Payment Due Date: 10 September 2026

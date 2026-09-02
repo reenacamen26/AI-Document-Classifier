@@ -1,0 +1,1 @@
+Customer bank statement with transaction dates, debit amounts and credit amounts.

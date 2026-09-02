@@ -1,0 +1,1 @@
+Invoice Number: INV1008 Customer: Web Works Subtotal: 16000 GST: 2880 Total Amount: 18880

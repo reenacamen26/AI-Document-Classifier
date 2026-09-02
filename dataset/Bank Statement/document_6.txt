@@ -1,0 +1,1 @@
+Financial statement containing deposits, withdrawals and available account balance.

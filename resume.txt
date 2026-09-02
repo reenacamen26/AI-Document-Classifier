@@ -1,0 +1,11 @@
+RESUME
+
+Name: Reena
+
+Skills: Python, Java, SQL, Machine Learning, Artificial Intelligence.
+
+Education: Bachelor of Technology in Computer Science.
+
+Experience: Software development and machine learning projects.
+
+Projects: AI Document Classification System.

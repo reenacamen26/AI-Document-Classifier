@@ -1,0 +1,3 @@
+Resume
+Software engineer with skills in Python, Java, SQL,
+machine learning and artificial intelligence.

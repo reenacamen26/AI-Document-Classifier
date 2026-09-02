@@ -1,0 +1,1 @@
+Monthly bank statement containing transaction history and account balance.

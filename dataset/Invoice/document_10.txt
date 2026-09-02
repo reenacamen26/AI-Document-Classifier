@@ -1,0 +1,1 @@
+Invoice Number: INV1010 Customer: AI Technologies Subtotal: 20000 GST: 3600 Total Amount: 23600

@@ -1,0 +1,1 @@
+Invoice Number: INV1003 Customer: Tech Corp Subtotal: 12000 GST: 2160 Total Amount: 14160

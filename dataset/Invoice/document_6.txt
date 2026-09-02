@@ -1,0 +1,1 @@
+Invoice Number: INV1006 Customer: Smart Solutions Subtotal: 25000 GST: 4500 Total Amount: 29500

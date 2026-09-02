@@ -1,0 +1,1 @@
+Bank Statement Account Number: 123456 Transaction Date: 27 August 2026 Credit: 25000 Balance: 75000

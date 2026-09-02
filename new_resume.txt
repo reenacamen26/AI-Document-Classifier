@@ -1,0 +1,16 @@
+RESUME
+
+Name: Reena
+Email: reena@example.com
+
+Education:
+Bachelor of Engineering
+
+Skills:
+Python, Machine Learning, SQL, Data Structures
+
+Projects:
+AI Document Classifier
+
+Experience:
+Software Development Intern

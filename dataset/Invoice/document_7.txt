@@ -1,0 +1,1 @@
+Invoice Number: INV1007 Customer: Future Tech Subtotal: 10000 GST: 1800 Total Amount: 11800

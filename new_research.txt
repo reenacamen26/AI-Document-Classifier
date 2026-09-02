@@ -1,0 +1,11 @@
+RESEARCH PAPER
+
+Title: Artificial Intelligence in Document Classification
+
+Abstract:
+This research explores the use of machine learning
+for automatically classifying documents into different
+categories. The study evaluates classification accuracy
+and confidence scores.
+
+Keywords: Artificial Intelligence, Machine Learning, Classification

@@ -1,0 +1,6 @@
+Account Number: 987654321
+Account Holder: Reena
+Transaction Date: 31 August 2026
+Credit: 50000
+Debit: 12000
+Balance: 38000

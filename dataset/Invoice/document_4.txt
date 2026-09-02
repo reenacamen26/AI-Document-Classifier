@@ -1,0 +1,1 @@
+Invoice Number: INV1004 Customer: Global Systems Subtotal: 30000 GST: 5400 Total Amount: 35400
