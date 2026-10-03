@@ -1,0 +1,1019 @@
+/* =========================================================
+   AI DOCUMENT CLASSIFIER
+   FUTURISTIC GLASSMORPHISM UI
+   ========================================================= */
+
+/* ---------- MAIN BACKGROUND ---------- */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(95, 63, 180, 0.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(0, 190, 255, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(160, 70, 220, 0.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #05070d 0%,
+            #0a1020 45%,
+            #071525 100%
+        );
+    
+    color: #e8ecff;
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+.main .block-container {
+    max-width: 1400px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* ---------- FUTURISTIC HERO ---------- */
+
+.ai-hero {
+    position: relative;
+    padding: 35px 40px;
+    margin-bottom: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 31, 70, 0.82),
+            rgba(10, 24, 45, 0.72)
+        );
+
+    border: 1px solid rgba(120, 160, 255, 0.35);
+    border-radius: 24px;
+
+    box-shadow:
+        0 0 35px rgba(80, 80, 255, 0.12),
+        inset 0 0 30px rgba(100, 120, 255, 0.04);
+
+    overflow: hidden;
+}
+
+
+/* glowing line around hero */
+
+.ai-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #7c5cff,
+        #55dfff,
+        #7c5cff,
+        transparent
+    );
+
+    box-shadow: 0 0 15px #6c63ff;
+}
+
+
+.ai-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-right: 12px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #715cff,
+        #26d9ff
+    );
+
+    box-shadow:
+        0 0 20px rgba(95, 110, 255, 0.5);
+
+    font-size: 25px;
+}
+
+
+.ai-title {
+    display: flex;
+    align-items: center;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    letter-spacing: -1px;
+}
+
+
+.ai-subtitle {
+    margin-top: 12px;
+
+    color: #9ca9c9;
+
+    font-size: 15px;
+}
+
+
+/* ---------- SMALL AI BADGE ---------- */
+
+.ai-badge {
+    display: inline-block;
+
+    margin-top: 18px;
+    padding: 7px 15px;
+
+    border-radius: 30px;
+
+    background: rgba(80, 80, 255, 0.12);
+
+    border: 1px solid rgba(110, 120, 255, 0.3);
+
+    color: #9ea8ff;
+
+    font-size: 12px;
+}
+
+
+/* ---------- SECTION HEADINGS ---------- */
+
+h2, h3 {
+    color: #f2f5ff !important;
+    font-weight: 750 !important;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+
+/* ---------- GLASS CARDS ---------- */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 34, 65, 0.72),
+            rgba(10, 18, 36, 0.72)
+        );
+
+    border: 1px solid rgba(120, 150, 220, 0.22);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.30),
+        inset 0 0 20px rgba(100, 120, 255, 0.025);
+}
+
+
+/* ---------- FILE UPLOADER ---------- */
+
+[data-testid="stFileUploader"] {
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 35, 68, 0.75),
+            rgba(11, 20, 40, 0.75)
+        );
+
+    border: 1px dashed rgba(105, 180, 255, 0.55);
+
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #6d8cff;
+
+    box-shadow:
+        0 0 25px rgba(70, 110, 255, 0.18);
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.stButton > button {
+    position: relative;
+
+    width: 100%;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #3568ff,
+            #7447e8,
+            #a33cff
+        );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 22px rgba(85, 70, 255, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(100, 75, 255, 0.42);
+
+    border: 1px solid rgba(120, 220, 255, 0.55);
+}
+
+
+/* ---------- METRIC CARDS ---------- */
+
+[data-testid="stMetric"] {
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30, 40, 76, 0.78),
+            rgba(10, 20, 42, 0.78)
+        );
+
+    border: 1px solid rgba(105, 140, 230, 0.25);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(100, 190, 255, 0.45);
+
+    box-shadow:
+        0 10px 30px rgba(50, 100, 255, 0.18);
+}
+
+
+[data-testid="stMetricLabel"] {
+    color: #9aa8c8 !important;
+}
+
+
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+
+    font-weight: 800 !important;
+}
+
+
+/* ---------- INPUT BOXES ---------- */
+
+.stTextInput input,
+.stTextArea textarea {
+    background: rgba(8, 15, 30, 0.85) !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid rgba(100, 130, 200, 0.35) !important;
+
+    border-radius: 11px !important;
+}
+
+
+.stTextInput input:focus,
+.stTextArea textarea:focus {
+    border-color: #6d75ff !important;
+
+    box-shadow:
+        0 0 12px rgba(100, 100, 255, 0.25) !important;
+}
+
+
+/* ---------- SELECT BOX ---------- */
+
+div[data-baseweb="select"] > div {
+    background: rgba(10, 18, 35, 0.85);
+
+    border: 1px solid rgba(100, 130, 200, 0.35);
+
+    border-radius: 11px;
+}
+
+
+/* ---------- DATAFRAME ---------- */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid rgba(100, 140, 220, 0.22);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------- PROGRESS BAR ---------- */
+
+div[data-testid="stProgressBar"] > div {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+}
+
+
+div[data-testid="stProgressBar"] > div > div {
+    background:
+        linear-gradient(
+            90deg,
+            #426dff,
+            #9a4dff,
+            #41dfff
+        );
+
+    border-radius: 20px;
+}
+
+
+/* ---------- ALERTS ---------- */
+
+[data-testid="stAlert"] {
+    border-radius: 14px;
+
+    border: 1px solid rgba(100, 150, 220, 0.25);
+}
+
+
+/* ---------- CAPTION ---------- */
+
+.stCaption {
+    color: #7f8eaf !important;
+}
+
+
+/* ---------- DIVIDER ---------- */
+
+hr {
+    border: none !important;
+
+    height: 1px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(110, 140, 220, 0.35),
+            transparent
+        ) !important;
+
+    margin: 35px 0 !important;
+}
+
+
+/* ---------- GENERAL TEXT ---------- */
+
+.stMarkdown,
+.stText,
+p {
+    color: #c5cde0;
+}
+
+
+/* ---------- EMOJIS / ICON FEEL ---------- */
+
+.ai-glow {
+    color: #7ee8ff;
+
+    text-shadow:
+        0 0 10px rgba(80, 220, 255, 0.6);
+}
+
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #060a13;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            #5c5cff,
+            #27c9e8
+        );
+
+    border-radius: 10px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    .main .block-container {
+        padding: 1rem;
+    }
+
+    .ai-title {
+        font-size: 27px;
+    }
+
+    .ai-hero {
+        padding: 25px;
+    }
+
+}
+/* =========================================================
+   WORKFLOW SECTION
+   ========================================================= */
+
+.workflow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    margin: 25px 0;
+
+    padding: 20px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 29, 60, 0.70),
+            rgba(8, 20, 38, 0.70)
+        );
+
+    border: 1px solid rgba(100, 150, 230, 0.20);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+.workflow-step {
+    flex: 1;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+.workflow-step.active {
+    background: rgba(80, 90, 255, 0.10);
+
+    border: 1px solid rgba(100, 120, 255, 0.25);
+
+    box-shadow:
+        0 0 20px rgba(90, 80, 255, 0.10);
+}
+
+
+.workflow-step:hover {
+    transform: translateY(-3px);
+}
+
+
+.workflow-icon {
+    font-size: 26px;
+
+    margin-bottom: 5px;
+
+    filter:
+        drop-shadow(0 0 7px rgba(80, 200, 255, 0.35));
+}
+
+
+.workflow-title {
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+}
+
+
+.workflow-text {
+    margin-top: 4px;
+
+    font-size: 11px;
+
+    color: #8492b5;
+}
+
+
+.workflow-line {
+    width: 55px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #6875ff,
+            #38dfff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 8px rgba(80, 150, 255, 0.45);
+}
+
+
+/* =========================================================
+   DATASET STATUS
+   ========================================================= */
+
+.dataset-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 20px;
+
+    margin-bottom: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 55, 100, 0.72),
+            rgba(15, 38, 70, 0.72)
+        );
+
+    border: 1px solid rgba(80, 170, 255, 0.20);
+
+    border-radius: 14px;
+
+    color: #aab9d8;
+
+    font-size: 14px;
+}
+
+
+.dataset-status strong {
+    color: #64dfff;
+
+    font-size: 15px;
+
+    text-shadow:
+        0 0 8px rgba(80, 220, 255, 0.35);
+}
+
+
+.status-icon {
+    font-size: 18px;
+}
+/* =========================================================
+   CLASSIFICATION RESULTS
+   ========================================================= */
+
+.results-section {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20, 29, 60, 0.72),
+            rgba(8, 18, 38, 0.72)
+        );
+
+    border: 1px solid rgba(100, 150, 240, 0.22);
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-top: 25px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.25),
+        inset 0 0 25px rgba(90, 100, 255, 0.03);
+}
+
+
+/* Search input */
+
+.stTextInput {
+    margin-bottom: 8px;
+}
+
+.stTextInput label {
+    color: #aab7d5 !important;
+    font-weight: 600 !important;
+}
+
+
+/* Category filter */
+
+.stSelectbox label {
+    color: #aab7d5 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   DASHBOARD TITLE
+   ========================================================= */
+
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    text-shadow:
+        0 0 15px rgba(100, 140, 255, 0.20);
+}
+
+
+/* =========================================================
+   DASHBOARD METRIC CARDS
+   ========================================================= */
+
+[data-testid="stMetric"] {
+    min-height: 115px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 38, 78, 0.82),
+            rgba(8, 19, 40, 0.82)
+        ) !important;
+
+    border: 1px solid rgba(105, 150, 255, 0.28) !important;
+
+    border-radius: 18px !important;
+
+    padding: 20px !important;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.28),
+        inset 0 0 18px rgba(80, 100, 255, 0.03);
+
+    transition: all 0.3s ease;
+}
+
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(80, 210, 255, 0.55) !important;
+
+    box-shadow:
+        0 12px 35px rgba(70, 110, 255, 0.18),
+        0 0 20px rgba(60, 190, 255, 0.08);
+}
+
+
+[data-testid="stMetricLabel"] {
+    color: #8f9fbe !important;
+
+    font-size: 12px !important;
+}
+
+
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+
+    font-size: 28px !important;
+
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 100, 85, 0.45),
+            rgba(15, 70, 65, 0.45)
+        ) !important;
+
+    border: 1px solid rgba(60, 220, 180, 0.22) !important;
+
+    border-radius: 14px !important;
+
+    color: #c9fff1 !important;
+}
+
+
+/* =========================================================
+   TABLE CONTAINER
+   ========================================================= */
+
+[data-testid="stDataFrame"] {
+    margin-top: 12px;
+
+    border-radius: 16px !important;
+
+    border: 1px solid rgba(100, 150, 230, 0.25) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   SEARCH + FILTER AREA
+   ========================================================= */
+
+div[data-testid="stTextInput"] input {
+    height: 45px;
+
+    background: rgba(8, 16, 32, 0.9) !important;
+
+    border: 1px solid rgba(90, 130, 220, 0.35) !important;
+
+    border-radius: 12px !important;
+
+    color: #ffffff !important;
+}
+
+
+div[data-testid="stTextInput"] input::placeholder {
+    color: #667593 !important;
+}
+
+
+/* =========================================================
+   CATEGORY SUMMARY
+   ========================================================= */
+
+.category-summary-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 35, 70, 0.75),
+            rgba(8, 18, 38, 0.75)
+        );
+
+    border: 1px solid rgba(100, 150, 230, 0.22);
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    margin-top: 10px;
+
+    color: #cbd5ed;
+}
+
+
+/* =========================================================
+   GLOWING SECTION DIVIDER
+   ========================================================= */
+
+.section-glow-line {
+    height: 1px;
+
+    margin: 25px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #5968ff,
+            #36dfff,
+            #5968ff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 10px rgba(70, 170, 255, 0.35);
+}
+/* =========================================================
+   DOCUMENT STATISTICS
+   ========================================================= */
+
+.statistics-title {
+    margin-top: 30px;
+    margin-bottom: 18px;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #f5f7ff;
+
+    text-shadow:
+        0 0 15px rgba(90, 140, 255, 0.25);
+}
+
+
+.statistics-card {
+    position: relative;
+
+    min-height: 125px;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 39, 78, 0.82),
+            rgba(8, 18, 40, 0.82)
+        );
+
+    border: 1px solid rgba(105, 155, 255, 0.25);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+
+.statistics-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #5d6dff,
+            #36dfff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 10px rgba(70, 190, 255, 0.4);
+}
+
+
+.statistics-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(90, 210, 255, 0.45);
+
+    box-shadow:
+        0 12px 35px rgba(60, 100, 255, 0.18);
+}
+
+
+.statistics-label {
+    color: #8e9dbc;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.statistics-value {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 0 12px rgba(100, 180, 255, 0.18);
+}
+/* =========================================================
+   CATEGORY SUMMARY
+   ========================================================= */
+
+.category-title {
+    margin-top: 30px;
+    margin-bottom: 18px;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #f5f7ff;
+
+    text-shadow:
+        0 0 15px rgba(90, 140, 255, 0.25);
+}
+
+
+.category-card {
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(22, 35, 70, 0.78),
+            rgba(8, 18, 38, 0.78)
+        );
+
+    border: 1px solid rgba(100, 150, 235, 0.22);
+
+    border-radius: 15px;
+
+    color: #cbd5ed;
+
+    transition: all 0.3s ease;
+}
+
+
+.category-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(80, 205, 255, 0.45);
+
+    box-shadow:
+        0 8px 25px rgba(60, 120, 255, 0.15);
+}
+
+
+.category-name {
+    font-size: 13px;
+
+    color: #9aa9c7;
+}
+
+
+.category-count {
+    margin-top: 5px;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}

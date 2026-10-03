@@ -16,6 +16,17 @@ st.set_page_config(
     page_icon="📄",
     layout="wide"
 )
+# =========================================================
+# LOAD CUSTOM CSS
+# =========================================================
+
+css_file = Path(__file__).parent / "style.css"
+
+with open(css_file, "r", encoding="utf-8") as f:
+    st.markdown(
+        f"<style>{f.read()}</style>",
+        unsafe_allow_html=True
+    )
 
 
 # =========================================================
@@ -61,12 +72,14 @@ if "analysis_mode" not in st.session_state:
 # TITLE
 # =========================================================
 
-st.title("📄 AI Document Classification System")
 
-st.write(
-    "Upload, classify, search and analyze your documents using Machine Learning."
-)
-
+st.markdown("""
+<div class="ai-hero">
+<div class="ai-title"><span class="ai-logo">✦</span>AI Document Classification System</div>
+<div class="ai-subtitle">Intelligent document analysis powered by Machine Learning</div>
+<div class="ai-badge">✦ AI POWERED &nbsp; • &nbsp; DOCUMENT INTELLIGENCE</div>
+</div>
+""", unsafe_allow_html=True)
 
 # =========================================================
 # TEXT EXTRACTION
@@ -368,9 +381,39 @@ def save_uploaded_result(document_name, prediction, confidence, text):
 
 dataset_files = get_dataset_files()
 
-st.info(
-    f"📁 Dataset documents available: {len(dataset_files)}"
-)
+st.markdown("""
+<div class="workflow-container">
+<div class="workflow-step active">
+<div class="workflow-icon">📤</div>
+<div class="workflow-title">UPLOAD</div>
+<div class="workflow-text">Add your document</div>
+</div>
+
+<div class="workflow-line"></div>
+
+<div class="workflow-step">
+<div class="workflow-icon">🤖</div>
+<div class="workflow-title">CLASSIFY</div>
+<div class="workflow-text">AI analyzes content</div>
+</div>
+
+<div class="workflow-line"></div>
+
+<div class="workflow-step">
+<div class="workflow-icon">📊</div>
+<div class="workflow-title">ANALYZE</div>
+<div class="workflow-text">View insights</div>
+</div>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<div class="dataset-status">
+<span class="status-icon">📁</span>
+<span>Dataset documents available:</span>
+<strong>{len(dataset_files)}</strong>
+</div>
+""", unsafe_allow_html=True)
 
 
 # =========================================================
@@ -600,14 +643,8 @@ if results:
     # SEARCH
     # =====================================================
 
-    search = st.text_input(
-        "🔎 Search documents",
-        placeholder="Type document name...",
-        key="document_search"
-    )
-
     # =====================================================
-    # CATEGORY FILTER
+    # SEARCH + CATEGORY FILTER
     # =====================================================
 
     filter_categories = [
@@ -619,11 +656,23 @@ if results:
         "Resume"
     ]
 
-    selected_category = st.selectbox(
-        "🗂️ Filter by category",
-        filter_categories,
-        key="category_filter"
-    )
+    search_col, filter_col = st.columns(2)
+
+    with search_col:
+
+        search = st.text_input(
+            "🔎 Search documents",
+            placeholder="Type document name...",
+            key="document_search"
+        )
+
+    with filter_col:
+
+        selected_category = st.selectbox(
+            "🗂️ Filter by category",
+            filter_categories,
+            key="category_filter"
+        )
 
     # =====================================================
     # FILTER RESULTS
@@ -672,10 +721,11 @@ if results:
     # AI DOCUMENT DASHBOARD
     # =====================================================
 
-    st.subheader(
-        "📊 AI Document Dashboard"
-    )
-
+    st.markdown("""
+    <div class="dashboard-title">
+        📊 AI Document Dashboard
+    </div>
+    """, unsafe_allow_html=True)
     total_documents = len(results)
 
     avg_confidence = (
@@ -763,17 +813,26 @@ if results:
         }
     )
 
+    st.markdown("""
+    <div class="analytics-title">
+        📈 Documents by Category
+    </div>
+    """, unsafe_allow_html=True)
+
     st.bar_chart(
-        category_df.set_index("Category")
+        category_df.set_index("Category"),
+        width="stretch"
     )
 
     # =====================================================
     # DOCUMENT STATISTICS
     # =====================================================
 
-    st.subheader(
-        "📈 Document Statistics"
-    )
+    st.markdown("""
+        <div class="statistics-title">
+        📈 Document Statistics
+    </div>
+    """, unsafe_allow_html=True)
 
     stats_col1, stats_col2, stats_col3 = st.columns(3)
 
