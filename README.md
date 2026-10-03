@@ -99,3 +99,13 @@ AI-Document-Classifier/
 
 ```bash
 pip install -r requirements.txt
+
+## Project Preview
+
+### Main Dashboard
+
+![AI Document Classification Dashboard](screenshots/dashboard.png)
+
+### Document Upload & Classification
+
+![Document Upload Section](screenshots/upload-section.png)
