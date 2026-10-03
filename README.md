@@ -99,6 +99,7 @@ AI-Document-Classifier/
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Project Preview
 
